@@ -442,14 +442,14 @@ hidden_targets = set()
 attack_targets = {}
 attacking_users = {}
 active_fight_sessions = {}
-OWNER_USERNAME = "Problem_Zenki"
+OWNER_USERNAME = "HANTHAR999"
 OWNER_ID = 123456789
 ADMINS = []
 ADMIN_USERNAMES = []
 nicknames = {}  # {user_id: nickname}
 revenge_users = set()  
 cached_members = {}
-BANNED_WORDS = ["တောင်းပန်တယ်", "တောင်းပန်ပါတယ်တဲ့", "Rixx", "တောင်းပန်ပါတယ်"]
+BANNED_WORDS = ["တောင်းပန်တယ်", "တောင်းပန်ပါတယ်တဲ့", "HANTHAR", "တောင်းပန်ပါတယ်"]
 god_mode_targets = {}  # chat_id -> set(user_ids)
 combo_states = {}  # {user_id: combo_type}
 
@@ -2127,8 +2127,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # --- Layout (1 2 / 3 / 4 5) ---
     keyboard = InlineKeyboardMarkup([
-        [button1, button2],   # 1      2
-        [button3],            #    3
+        [button3, button2],   # 1      2
+        [button1],            #    3
         [button4, button5]   # 4      5
     ])
 
